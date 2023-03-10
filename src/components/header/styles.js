@@ -9,7 +9,7 @@ const StyledHeader = styled.div`
 	padding-top: 2rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	background-color: lightgray;
+	background-color: ${({ dark }) => (dark ? '#F7F9FF' : '#20222F')};
 
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
@@ -31,4 +31,20 @@ const StyledDarkModeContainer = styled.div`
 	}
 `;
 
-export { StyledHeader, StyledDarkModeContainer };
+const StyledTitle = styled.h1`
+	color: ${({ dark }) => (dark ? '#20222F' : '#F7F9FF')};
+`;
+const StyledTotal = styled.p`
+	color: ${({ dark }) => (dark ? '#20222F' : '#F7F9FF')};
+`;
+const StyledDarkModeText = styled.p`
+	color: ${({ dark }) => (dark ? '#20222F' : '#F7F9FF')};
+`;
+
+export {
+	StyledHeader,
+	StyledDarkModeContainer,
+	StyledTitle,
+	StyledTotal,
+	StyledDarkModeText
+};

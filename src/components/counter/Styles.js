@@ -5,6 +5,7 @@ const StyledCounterContainer = styled.div`
 	align-items: center;
 	justify-content: space-evenly;
 	width: 100px;
+	color: ${({ color }) => color};
 `;
 
 export { StyledCounterContainer };

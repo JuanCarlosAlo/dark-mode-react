@@ -21,9 +21,9 @@ const StyledLabel = styled.label`
 		content: '';
 		height: 32px;
 		width: 32px;
-		left: 4px;
-		bottom: 4px;
-		background-color: blue;
+		left: 2px;
+		bottom: 2px;
+		background-color: gray;
 		transition: 0.4s;
 		border-radius: 50%;
 	}

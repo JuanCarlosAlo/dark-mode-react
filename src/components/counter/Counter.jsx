@@ -1,8 +1,8 @@
 import { StyledCounterContainer } from "./Styles"
 
-const Counter=({imgArrow,counterText})=>{
+const Counter=({imgArrow,counterText,color})=>{
     return(
-        <>  <StyledCounterContainer>
+        <>  <StyledCounterContainer color ={color}>
 
         
             <img src={`/public/images/${imgArrow}`} alt="" />

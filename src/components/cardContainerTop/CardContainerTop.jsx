@@ -10,7 +10,8 @@ const cardObj =[
         followersNumber: '1987',
         followersText: 'FOLLOWERS',
         imgArrow: 'icon-up.svg',
-        counterText: '12 Today'
+        counterText: '12 Today',
+        color: 'rgba(30, 181, 137, 1)'
     },
     {
         id: v4(),
@@ -19,7 +20,8 @@ const cardObj =[
         followersNumber: '1044',
         followersText: 'FOLLOWERS',
         imgArrow: 'icon-up.svg',
-        counterText: '99 Today'
+        counterText: '99 Today',
+        color: 'rgba(30, 181, 137, 1)'
     },
     {
         id: v4(),
@@ -28,7 +30,8 @@ const cardObj =[
         followersNumber: '11K',
         followersText: 'FOLLOWERS',
         imgArrow: 'icon-up.svg',
-        counterText: '1099 Today'
+        counterText: '1099 Today',
+        color: 'rgba(30, 181, 137, 1)'
     },
     {
         id: v4(),
@@ -37,14 +40,15 @@ const cardObj =[
         followersNumber: '8239',
         followersText: 'FOLLOWERS',
         imgArrow: 'icon-down.svg',
-        counterText: '144 Today'
+        counterText: '144 Today',
+        color: 'rgba(220, 65, 76, 1)'
     },
 ]
 
 
 
 
-const CardContainerTop=()=>{
+const CardContainerTop=({dark})=>{
     return(
         <>  <StyledTopContainer>
                {cardObj.map(info=>{
@@ -52,6 +56,8 @@ const CardContainerTop=()=>{
                     <CardItem
                         {...info}
                         key={info.id}
+                        dark={dark}
+                       
                     />
 
                     )

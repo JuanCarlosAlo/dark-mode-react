@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 const StyledCardItem = styled.div`
 	display: flex;
-
 	align-items: center;
 	flex-direction: column;
 	height: 216px;
 	width: 100%;
 	padding: 0.5rem;
 	border-radius: 1rem;
-	background-color: rgba(241, 243, 250, 1);
+	background-color: ${({ dark }) => (dark ? '#F7F9FF' : '#252B42')};
+	color: ${({ dark }) => (dark ? '#252B42' : '#F7F9FF')};
 `;
 
 const StyledSocialMediaContainer = styled.div`
@@ -22,7 +22,7 @@ const StyledSocialMediaContainer = styled.div`
 
 const StyledFollowersNumbers = styled.div`
 	font-size: 3rem;
-	font-weight: 500;
+	font-weight: 600;
 `;
 
 export { StyledCardItem, StyledSocialMediaContainer, StyledFollowersNumbers };

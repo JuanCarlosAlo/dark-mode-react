@@ -2,11 +2,11 @@ import Counter from "../counter/Counter"
 import SocialMedia from "../socialMedia/SocialMedia"
 import { StyledCardItem, StyledFollowersNumbers, StyledSocialMediaContainer } from "./styles"
 
-const CardItem=({socialImg,socialName,followersNumber,followersText,imgArrow,counterText})=>{
-    console.log(socialImg)
+const CardItem=({socialImg,socialName,followersNumber,followersText,imgArrow,counterText,dark,color})=>{
+  
     return(
         <>
-            <StyledCardItem>
+            <StyledCardItem dark={dark}>
                 <StyledSocialMediaContainer>
                     <SocialMedia socialImg={socialImg}/>
 
@@ -15,7 +15,7 @@ const CardItem=({socialImg,socialName,followersNumber,followersText,imgArrow,cou
                 <StyledFollowersNumbers>{followersNumber}</StyledFollowersNumbers>
                 <p>{followersText}</p>
                 <div>
-                   <Counter imgArrow={imgArrow} counterText={counterText}/>
+                   <Counter imgArrow={imgArrow} counterText={counterText} color={color}/>
                 </div>
             </StyledCardItem>
         </>
